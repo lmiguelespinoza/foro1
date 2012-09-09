@@ -1,6 +1,6 @@
 class Roman
 
-  ROMNUM = [ ["V",5],["IV",4],["I",1]  ]
+  ROMNUM = [ ["IX",9],["V",5],["IV",4],["I",1]  ]
 
   def convert(number)	
   	romano=""
