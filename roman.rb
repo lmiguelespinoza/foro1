@@ -1,9 +1,17 @@
 class Roman
 
-  def convert(number)  	
-    return "V" if number==5
-    return "IV" if number==4
-    return "I"*number
+  ROMNUM = [ ["V",5],["IV",4],["I",1]  ]
+
+  def convert(number)	
+  	romano=""
+
+  	ROMNUM.each do |simbolo,valor|
+  	  while number>=valor
+  		romano+=simbolo
+        number-=valor
+      end  
+	end
+	return romano
   end
 
  end
